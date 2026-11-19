@@ -47,10 +47,10 @@ export default function Projects() {
           return (
             <div
               key={item.id}
-              className="flex flex-col gap-4  bg-[#251f38] px-4 py-12 rounded-2xl border border-gray-400 hover:-translate-y-2 duration-300 hover:shadow-2xl shadow-purple-600"
+              className="flex flex-col gap-4  bg-[#251f38] px-4 py-12 rounded-2xl border border-gray-400 hover:-translate-y-2 duration-300 hover:shadow-2xl shadow-purple-600 group"
             >
-              <div className="h-52 object-contain overflow-hidden">
-                <img src={item.image} alt="WaveVisas" />
+              <div className="h-52 object-contain overflow-hidden ">
+                <img src={item.image} alt="WaveVisas" className="group-hover:scale-105 duration-900" />
               </div>
               <h1 className="text-2xl font-bold text-white">{item.title}</h1>
               <p className="line-clamp-3 w-80 text-lg text-gray-500">
@@ -59,7 +59,7 @@ export default function Projects() {
               <div className="text-purple-500/80 flex flex-wrap w-70 gap-2">
                 {item.tags.map((tag) => {
                   return (
-                    <div className="bg-purple-900/30 px-2 font-semibold text-sm rounded-xl">
+                    <div key={tag} className="bg-purple-900/30 px-2 font-semibold text-sm rounded-xl">
                       {tag}
                     </div>
                   );

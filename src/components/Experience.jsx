@@ -4,7 +4,7 @@ export default function Experience() {
       <div className="text-center flex flex-col gap-6">
         <h1>
           <span className="border-b-4 text-4xl font-bold border-[#8245ec]">
-            Experience
+            EXPERIENCE
           </span>
         </h1>
         <h1 className="text-xl font-bold text-gray-700 mb-16">
