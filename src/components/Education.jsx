@@ -4,7 +4,7 @@ export default function Education() {
       id: 1,
       image: "/ignou-f_Qvcrgy.png",
       title: "Bachelor of Computer Application - BCA",
-      loc: "MERIT, DELHI",
+      loc: "MERIT, Delhi",
       year: "Persuing",
       grade: "Grade : *",
       desc: "I completed my Bachelor's degree in Bachelor Of Computer Application (BCA) from IGNOU, Delhi. Diving into Web Development and Database Management Systems, I gained practical insights into the world of software development.",
@@ -50,7 +50,7 @@ export default function Education() {
               key={data.id}
               className={`flex flex-col ${data.id == 2 ? "items-end" : "items-start"} `}
             >
-              <div className="border rounded-2xl flex flex-col gap-4 p-6 w-96 hover:scale-105 duration-300">
+              <div className="border rounded-2xl flex flex-col gap-4 p-6 w-96 hover:scale-105 duration-300 bg-[#0d081f]">
                 <div className="flex gap-4 items-center ">
                   <img
                     src={data.image}
