@@ -1,5 +1,6 @@
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
@@ -14,6 +15,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <Contact />
+      <Footer/>
     </div>
   );
 }

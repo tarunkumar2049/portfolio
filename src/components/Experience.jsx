@@ -39,7 +39,7 @@ export default function Experience() {
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <h1 className="font-semibold text-white">Skills:</h1>
+            <h1 className="font-semibold text-white">Skills Learning:</h1>
             <div className="flex flex-wrap gap-2 text-white">
               <span className="bg-[#8245ec] px-4 py-1 rounded-md border border-gray-400">
                 HTML

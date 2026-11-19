@@ -42,12 +42,12 @@ export default function Projects() {
         </h1>
       </div>
 
-      <div className="px-45 grid grid-cols-3  gap-12">
+      <div className="px-45 grid grid-cols-3 gap-12">
         {data.map((item) => {
           return (
             <div
               key={item.id}
-              className="flex flex-col gap-4  bg-[#251f38] px-4 py-12 rounded-2xl border border-gray-400"
+              className="flex flex-col gap-4  bg-[#251f38] px-4 py-12 rounded-2xl border border-gray-400 hover:-translate-y-2 duration-300 hover:shadow-2xl shadow-purple-600"
             >
               <div className="h-52 object-contain overflow-hidden">
                 <img src={item.image} alt="WaveVisas" />
