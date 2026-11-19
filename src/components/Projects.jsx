@@ -29,7 +29,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="mt-60">
+    <div className="pt-60 bg-[#050414] text-white">
       <div className="text-center flex flex-col gap-6">
         <h1>
           <span className="border-b-4 text-4xl font-bold border-[#8245ec]">

@@ -29,7 +29,7 @@ export default function Education() {
     },
   ];
   return (
-    <div className="relative mt-60 px-45">
+    <div className="relative pt-60 px-45 bg-linear-to-b from-[#050414] to-[#1f032a] text-white">
       <div className="text-center flex flex-col gap-6">
         <h1>
           <span className="border-b-4 text-4xl font-bold border-[#8245ec]">
@@ -40,7 +40,7 @@ export default function Education() {
           My education has been a journey of learning and development. Here are
           the details of my academic background
         </h1>
-        <div className="absolute top-40 right-[50%] h-full w-1 bg-red-500 -z-5"></div>
+        <div className="absolute top-100 right-[50%] h-235 w-1 bg-white"></div>
       </div>
 
       <div>
@@ -48,7 +48,7 @@ export default function Education() {
           return (
             <div
               key={data.id}
-              className={`pt-30 flex flex-col ${data.id == 2 ? "items-end" : "items-start"} `}
+              className={`flex flex-col ${data.id == 2 ? "items-end" : "items-start"} `}
             >
               <div className="border rounded-2xl flex flex-col gap-4 p-6 w-96 hover:scale-105 duration-300">
                 <div className="flex gap-4 items-center ">

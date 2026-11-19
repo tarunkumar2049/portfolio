@@ -5,7 +5,7 @@ import { FaRegCopyright } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col items-center mt-25">
+    <div className="flex flex-col items-center pt-25 bg-[#050414] text-white">
       <h1 className="font-bold text-xl text-purple-600">Tarun Kumar</h1>
       <div className="flex gap-6 my-4 font-semibold">
         <Link
@@ -49,7 +49,7 @@ export default function Footer() {
           <FaLinkedin size={20} />
         </Link>
       </div>
-      <div className="flex items-center my-6">
+      <div className="flex items-center my-6 text-gray-400">
         <FaRegCopyright />2026 Tarun kumar. All rights reserved
       </div>
     </div>

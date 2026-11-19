@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Header() {
   return (
-    <div className="px-45 flex justify-between py-4 fixed bg-transparent z-20 backdrop-blur-lg ">
+    <div className="px-45 flex justify-between py-4 fixed bg-transparent z-20 backdrop-blur-lg text-white">
       <div className="flex font-semibold text-xl ">
         <span>
           <h1></h1>

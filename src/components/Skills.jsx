@@ -133,21 +133,21 @@ export default function Skills() {
     },
   ];
   return (
-    <div className="mx-45">
+    <div className="px-45 bg-linear-to-b from-[#050414] to-[#1f032a] text-white">
       <div className="text-center flex flex-col gap-6">
         <h1>
           <span className="border-b-4 text-4xl font-bold border-[#8245ec]">
             SKILLS
           </span>
         </h1>
-        <h1 className="text-xl font-bold text-gray-700 mb-16">
+        <h1 className="text-xl font-bold text-gray-400 mb-16">
           A collection of my technical skills and expertise honed through
           various projects and experiences
         </h1>
       </div>
 
       <div className="grid grid-cols-2 gap-12">
-        <div className="text-center bg-[#111827] rounded-2xl border-2 border-white text-gray-400 ">
+        <div className="text-center bg-[#0d081f] rounded-2xl border-2 border-gray-500 text-gray-400 ">
           <h1 className="text-3xl font-bold py-4">Frontend</h1>
           <div className="grid grid-cols-3 gap-4 px-6 pb-4 hover:skew-x-4">
             {Frontend.map((item) => {
@@ -172,7 +172,7 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="text-center bg-[#111827] rounded-2xl border-2 border-white text-gray-400">
+        <div className="text-center bg-[#0d081f] rounded-2xl border-2 border-gray-500 text-gray-400">
           <h1 className="text-3xl font-bold py-4">Backend</h1>
           <div className="grid grid-cols-3 gap-4 px-6 pb-4 hover:skew-x-4">
             {Backend.map((item) => {
@@ -197,7 +197,7 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="text-center bg-[#111827] rounded-2xl border-2 border-white text-gray-400">
+        <div className="text-center bg-[#0d081f] rounded-2xl border-2 border-gray-500 text-gray-400">
           <h1 className="text-3xl font-bold py-4">Languages</h1>
           <div className="grid grid-cols-3 gap-4 px-6 pb-4 hover:skew-x-4">
             {Languages.map((item) => {
@@ -221,7 +221,7 @@ export default function Skills() {
             })}
           </div>
         </div>
-        <div className="text-center bg-[#111827] rounded-2xl border-2 border-white text-gray-400">
+        <div className="text-center bg-[#0d081f] rounded-2xl border-2 border-gray-500 text-gray-400">
           <h1 className="text-3xl font-bold py-4">Tools</h1>
           <div className="grid grid-cols-3 gap-4 px-6 pb-4 hover:skew-x-4">
             {Tools.map((item) => {
