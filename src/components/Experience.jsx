@@ -22,17 +22,20 @@ export default function Experience() {
               className="size-16 bg-white rounded-md"
             ></img>
             <span className="text-white">
-              <h1 className="text-2xl font-bold">Full Stack Developer</h1>
+              <h1 className="text-2xl font-bold">
+                Full Stack Developer Course
+              </h1>
               <h1>Asha Tech</h1>
-              <h1 className="text-gray-500">July 2026 - Present</h1>
+              <h1 className="text-gray-500">May 2026 - Present</h1>
             </span>
           </div>
           <div>
             <p className="font-semibold text-gray-500">
-              Worked as a full-stack developer on multi-modal and e-commerce
-              projects, optimizing and building scalable UI components and web
-              applications with React, Node.js, Express, MongoDB, and
-              microservices to deliver responsive, high-performance sites.
+              Currently pursuing a Full Stack Web Development course, learning
+              to build responsive and dynamic web applications using modern
+              frontend and backend technologies. Gaining hands-on experience in
+              web development, database management, API integration, and
+              full-stack project development.
             </p>
           </div>
           <div className="flex flex-col gap-2">
@@ -60,9 +63,6 @@ export default function Experience() {
                 Redux
               </span>
               <span className="bg-[#8245ec] px-4 py-1 rounded-md border border-gray-400">
-                Zustand
-              </span>
-              <span className="bg-[#8245ec] px-4 py-1 rounded-md border border-gray-400">
                 Framer Motion
               </span>
               <span className="bg-[#8245ec] px-4 py-1 rounded-md border border-gray-400">
@@ -80,8 +80,8 @@ export default function Experience() {
             </div>
           </div>
         </div>
-        <div className="absolute top-70 right-[50%] h-80 w-1 bg-red-500 -z-5" ></div>
-        <div className="hover:scale-105 duration-300 bg-[#111827] p-8 flex flex-col gap-4 rounded-2xl scale-95">
+        <div className="absolute top-70 right-[50%] h-80 w-1 bg-red-500 -z-5 hidden"></div>
+        <div className="hover:scale-105 duration-300 bg-[#111827] p-8 flex-col gap-4 rounded-2xl scale-95 hidden">
           <div className="flex gap-4">
             <img
               src="/zidioLogo-_je3nGMI.png"

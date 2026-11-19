@@ -40,53 +40,53 @@ export default function Skills() {
       image: "/Material Ui.png",
       title: "Material Ui",
     },
-    {
-      id: 9,
-      image: "/Bootstrap.png",
-      title: "Bootstrap",
-    },
+    // {
+    //   id: 9,
+    //   image: "/Bootstrap.png",
+    //   title: "Bootstrap",
+    // },
   ];
   const Backend = [
-    {
-      id: 1,
-      image: "/Node.js.png",
-      title: "Node JS",
-    },
-    {
-      id: 2,
-      image: "/Express.png",
-      title: "Express Js",
-    },
-    {
-      id: 3,
-      image: "/MongoDB.png",
-      title: "MongoDB",
-    },
-    {
-      id: 4,
-      image: "/Cloudinary.png",
-      title: "Cloudinary",
-    },
-    {
-      id: 5,
-      image: "/JWT.png",
-      title: "JWT",
-    },
-    {
-      id: 6,
-      image: "/Bcrypt.png",
-      title: "Bcrypt",
-    },
-    {
-      id: 7,
-      image: "/logo.png",
-      title: "Argon2",
-    },
-    {
-      id: 8,
-      image: "/Nodemailer.png",
-      title: "Nodemailer",
-    },
+    // {
+    //   id: 1,
+    //   image: "/Node.js.png",
+    //   title: "Node JS",
+    // },
+    // {
+    //   id: 2,
+    //   image: "/Express.png",
+    //   title: "Express Js",
+    // },
+    // {
+    //   id: 3,
+    //   image: "/MongoDB.png",
+    //   title: "MongoDB",
+    // },
+    // {
+    //   id: 4,
+    //   image: "/Cloudinary.png",
+    //   title: "Cloudinary",
+    // },
+    // {
+    //   id: 5,
+    //   image: "/JWT.png",
+    //   title: "JWT",
+    // },
+    // {
+    //   id: 6,
+    //   image: "/Bcrypt.png",
+    //   title: "Bcrypt",
+    // },
+    // {
+    //   id: 7,
+    //   image: "/logo.png",
+    //   title: "Argon2",
+    // },
+    // {
+    //   id: 8,
+    //   image: "/Nodemailer.png",
+    //   title: "Nodemailer",
+    // },
   ];
   const Languages = [
     {
@@ -116,16 +116,16 @@ export default function Skills() {
       image: "/VS Code.png",
       title: "VS Code",
     },
-    {
-      id: 4,
-      image: "/Postman.png",
-      title: "Postman",
-    },
-    {
-      id: 5,
-      image: "/Compass.png",
-      title: "Compass",
-    },
+    // {
+    //   id: 4,
+    //   image: "/Postman.png",
+    //   title: "Postman",
+    // },
+    // {
+    //   id: 5,
+    //   image: "/Compass.png",
+    //   title: "Compass",
+    // },
     {
       id: 6,
       image: "/Vercel.png",
