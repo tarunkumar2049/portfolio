@@ -133,7 +133,10 @@ export default function Skills() {
     },
   ];
   return (
-    <div id="skills" className="lg:px-45 md:px-12 px-8 py-20 lg:py-30 bg-linear-to-b from-[#050414] to-[#1f032a] text-white">
+    <div
+      id="skills"
+      className="lg:px-45 md:px-12 px-8 py-20 lg:py-30 bg-linear-to-b from-[#050414] to-[#1f032a] text-white"
+    >
       <div className="text-center flex flex-col gap-6">
         <h1>
           <span className="border-b-4 text-4xl font-bold border-[#8245ec]">
