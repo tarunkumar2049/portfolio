@@ -31,7 +31,7 @@ export default function Education() {
   return (
     <div
       id="education"
-      className="relative py-30 px-8 lg:px-45 md:px-20 bg-linear-to-b from-[#050414] to-[#1f032a] text-white"
+      className="relative lg:py-30 py-20 px-8 lg:px-45 md:px-20 bg-linear-to-b from-[#050414] to-[#1f032a] text-white"
     >
       <div className="text-center flex flex-col gap-6">
         <h1>
@@ -43,7 +43,7 @@ export default function Education() {
           My education has been a journey of learning and development. Here are
           the details of my academic background
         </h1>
-        <div className="absolute top-122 lg:top-70 md:right-[50%] h-280 md:h-200 lg:h-235 w-1 bg-white md:hidden lg:flex"></div>
+        <div className="absolute top-70 md:right-[50%] h-280 md:h-200 lg:h-235 w-1 bg-white md:hidden lg:flex"></div>
       </div>
 
       <div>

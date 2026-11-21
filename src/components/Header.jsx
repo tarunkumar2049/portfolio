@@ -33,19 +33,19 @@ export default function Header() {
           <IoIosArrowForward />
         </span>
       </Link>
-      <div className="flex items-center md:hidden text-purple-700 text-3xl">
+      <div className="flex items-center md:hidden ">
         <div
           onClick={() => {
             menu ? setMenu(false) : setMenu(true);
           }}
         >
-          <GiHamburgerMenu />
+          <GiHamburgerMenu className="text-purple-700 text-3xl" />
         </div>
         <div
           className={`${menu ? "flex" : "hidden"} flex-col gap-4 fixed px-12 py-8 bg-black/50 items-center left-8 right-8 top-15 rounded-2xl backdrop-blur-2xl  `}
         >
           <Link
-            className={`hover:text-[#8245ec] duration-300 transition-all hover:scale-110 ${url == `/` ? "text-red-500" : "text-white"}`}
+            className={`hover:text-[#8245ec] duration-300 transition-all hover:scale-110 ${url == `/#about` ? "text-red-500" : "text-white"}`}
             href={"#about"}
             onClick={() => {
               setMenu(false);
