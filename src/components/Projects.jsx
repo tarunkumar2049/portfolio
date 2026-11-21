@@ -42,7 +42,7 @@ export default function Projects() {
     setId(id);
   }
   return (
-    <div className="pt-60 pb-6   bg-[#050414] text-white">
+    <div id="projects" className="pt-60 px-8 pb-6 bg-[#050414] text-white">
       <div className="text-center flex flex-col gap-6">
         <h1>
           <span className="border-b-4 text-4xl font-bold border-[#8245ec]">
@@ -55,7 +55,7 @@ export default function Projects() {
         </h1>
       </div>
 
-      <div className="px-45 grid grid-cols-3 gap-12">
+      <div className="md:px-45 grid md:grid-cols-3 gap-12">
         {project.map((item) => {
           return (
             <div
@@ -74,10 +74,10 @@ export default function Projects() {
                 />
               </div>
               <h1 className="text-2xl font-bold text-white">{item.title}</h1>
-              <p className="line-clamp-3 w-80 text-lg text-gray-500">
+              <p className="line-clamp-3 md:w-80 text-lg text-gray-500">
                 {item.desc}
               </p>
-              <div className="text-purple-500/80 flex flex-wrap w-70 gap-2">
+              <div className="text-purple-500/80 flex flex-wrap md:w-70 gap-2">
                 {item.tags.map((tag) => {
                   return (
                     <div
@@ -95,17 +95,17 @@ export default function Projects() {
       </div>
 
       {popup && (
-        <div className="top-20 fixed flex flex-col ">
+        <div className="top-15 right-0 mx-8 h-screen md:top-20 fixed flex flex-col z-25 backdrop-blur-md">
           {project
             .filter((data) => data.id == id)
             .map((item) => {
               return (
                 <div
                   key={item.id}
-                  className="relative flex flex-col gap-6 bg-[#0d081f] mx-90 p-8 pb-40 rounded-2xl"
+                  className="relative flex flex-col gap-6 bg-[#0d081f] md:mx-90 p-6 md:p-8 pb-20 rounded-2xl"
                 >
                   <div
-                    className="absolute right-8 text-3xl font-bold hover:scale-125 hover:text-red-600 duration-300"
+                    className="absolute right-4 md:right-8 text-3xl font-bold hover:scale-125 hover:text-red-600 duration-300"
                     onClick={() => {
                       setPopup(true);
                       setId(" ");
@@ -113,15 +113,17 @@ export default function Projects() {
                   >
                     <BiX />
                   </div>
-                  <div className="flex mt-10 justify-center">
+                  <div className="flex mt-8 md:mt-10 justify-center">
                     <img
                       src={item.image}
                       alt="website image"
-                      className="h-40"
+                      className="h-35 md:h-60"
                     />
                   </div>
-                  <h1 className="text-3xl">{item.title}</h1>
-                  <p className=" text-lg text-gray-500">{item.desc}</p>
+                  <h1 className="text-2xl md:text-3xl ">{item.title}</h1>
+                  <p className="text-xs font-semibold md:text-lg text-gray-500">
+                    {item.desc}
+                  </p>
                   <div className="text-purple-500/80 flex flex-wrap gap-2">
                     {item.tags.map((tag) => {
                       return (
@@ -134,17 +136,17 @@ export default function Projects() {
                       );
                     })}
                   </div>
-                  <div className="flex justify-between gap-10">
+                  <div className="flex justify-around md:gap-10">
                     <Link
                       href={item.code}
-                      className="bg-[#1a253c] hover:bg-[#6b21a8] px-27 py-1 rounded-md text-2xl font-semibold"
+                      className="bg-[#1a253c] hover:bg-[#6b21a8] px-4 md:px-27 py-1 rounded-2xl md:rounded-md md:text-2xl font-semibold"
                       target="_blank"
                     >
                       View Code
                     </Link>
                     <Link
                       href={item.live}
-                      className="bg-[#8040b6] hover:bg-[#6b21a8] px-27 py-1 rounded-md text-2xl font-semibold"
+                      className="bg-[#8040b6] hover:bg-[#6b21a8] px-4 md:px-27 py-1 rounded-2xl md:rounded-md md:text-2xl font-semibold"
                       target="_blank"
                     >
                       View Live

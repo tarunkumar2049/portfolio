@@ -10,25 +10,25 @@ export default function Footer() {
       <div className="flex gap-6 my-4 font-semibold">
         <Link
           className="hover:text-[#8245ec] duration-300 transition-all hover:scale-110"
-          href={""}
+          href={"#about"}
         >
           About
         </Link>
         <Link
           className="hover:text-[#8245ec] duration-300 transition-all hover:scale-110"
-          href={""}
+          href={"#skills"}
         >
           Skills
         </Link>
         <Link
           className="hover:text-[#8245ec] duration-300 transition-all hover:scale-110"
-          href={""}
+          href={"#experience"}
         >
           Experience
         </Link>
         <Link
           className="hover:text-[#8245ec] duration-300 transition-all hover:scale-110"
-          href={""}
+          href={"#projects"}
         >
           Projects
         </Link>
@@ -50,7 +50,8 @@ export default function Footer() {
         </Link>
       </div>
       <div className="flex items-center my-6 text-gray-400">
-        <FaRegCopyright />2026 Tarun kumar. All rights reserved
+        <FaRegCopyright />
+        2026 Tarun kumar. All rights reserved
       </div>
     </div>
   );

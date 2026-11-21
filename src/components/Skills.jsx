@@ -133,7 +133,7 @@ export default function Skills() {
     },
   ];
   return (
-    <div className="px-45 bg-linear-to-b from-[#050414] to-[#1f032a] text-white">
+    <div id="skills" className="md:px-45 px-8 bg-linear-to-b from-[#050414] to-[#1f032a] text-white">
       <div className="text-center flex flex-col gap-6">
         <h1>
           <span className="border-b-4 text-4xl font-bold border-[#8245ec]">
@@ -146,25 +146,25 @@ export default function Skills() {
         </h1>
       </div>
 
-      <div className="grid grid-cols-2 gap-12">
+      <div className="grid md:grid-cols-2 gap-12">
         <div className="text-center bg-[#0d081f] rounded-2xl border-2 border-gray-500 text-gray-400 ">
           <h1 className="text-3xl font-bold py-4">Frontend</h1>
-          <div className="grid grid-cols-3 gap-4 px-6 pb-4 hover:skew-x-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 md:px-6 px-3 pb-4 hover:skew-x-4">
             {Frontend.map((item) => {
               return (
                 <div
                   key={item.id}
-                  className="flex border-2 border-gray-600 rounded-4xl justify-center py-3"
+                  className="flex border-2 border-gray-600 rounded-4xl justify-center md:py-3 py-2"
                 >
-                  <div className="flex gap-4">
+                  <div className="flex gap-2 md:gap-4">
                     <span className="overflow-hidden ">
                       <img
                         src={item.image}
                         alt={item.title}
-                        className="size-7"
+                        className="size-5 md:size-7"
                       />
                     </span>
-                    <h1 className="font-semibold">{item.title}</h1>
+                    <h1 className="font-semibold text-sm">{item.title}</h1>
                   </div>
                 </div>
               );
@@ -174,22 +174,22 @@ export default function Skills() {
 
         <div className="text-center bg-[#0d081f] rounded-2xl border-2 border-gray-500 text-gray-400">
           <h1 className="text-3xl font-bold py-4">Backend</h1>
-          <div className="grid grid-cols-3 gap-4 px-6 pb-4 hover:skew-x-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 md:px-6 px-3 pb-4 hover:skew-x-4">
             {Backend.map((item) => {
               return (
                 <div
                   key={item.id}
-                  className="flex border-2 border-gray-600 rounded-4xl justify-center py-3"
+                  className="flex border-2 border-gray-600 rounded-4xl justify-center md:py-3 py-2"
                 >
-                  <div className="flex gap-4">
+                  <div className="flex gap-2 md:gap-4">
                     <span className="overflow-hidden ">
                       <img
                         src={item.image}
                         alt={item.title}
-                        className="size-7"
+                        className="size-5 md:size-7"
                       />
                     </span>
-                    <h1 className="font-semibold">{item.title}</h1>
+                    <h1 className="font-semibold text-sm">{item.title}</h1>
                   </div>
                 </div>
               );
@@ -199,22 +199,22 @@ export default function Skills() {
 
         <div className="text-center bg-[#0d081f] rounded-2xl border-2 border-gray-500 text-gray-400">
           <h1 className="text-3xl font-bold py-4">Languages</h1>
-          <div className="grid grid-cols-3 gap-4 px-6 pb-4 hover:skew-x-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 md:px-6 px-3 pb-4 hover:skew-x-4">
             {Languages.map((item) => {
               return (
                 <div
                   key={item.id}
-                  className="flex border-2 border-gray-600 rounded-4xl justify-center py-3"
+                  className="flex border-2 border-gray-600 rounded-4xl justify-center md:py-3 py-2"
                 >
-                  <div className="flex gap-4">
+                  <div className="flex gap-2 md:gap-4">
                     <span className="overflow-hidden ">
                       <img
                         src={item.image}
                         alt={item.title}
-                        className="size-7"
+                        className="size-5 md:size-7"
                       />
                     </span>
-                    <h1 className="font-semibold">{item.title}</h1>
+                    <h1 className="font-semibold text-sm">{item.title}</h1>
                   </div>
                 </div>
               );
@@ -223,22 +223,22 @@ export default function Skills() {
         </div>
         <div className="text-center bg-[#0d081f] rounded-2xl border-2 border-gray-500 text-gray-400">
           <h1 className="text-3xl font-bold py-4">Tools</h1>
-          <div className="grid grid-cols-3 gap-4 px-6 pb-4 hover:skew-x-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 md:px-6 px-3 pb-4 hover:skew-x-4">
             {Tools.map((item) => {
               return (
                 <div
                   key={item.id}
-                  className="flex border-2 border-gray-600 rounded-4xl justify-center py-3"
+                  className="flex border-2 border-gray-600 rounded-4xl justify-center md:py-3 py-2"
                 >
-                  <div className="flex gap-4">
+                  <div className="flex gap-2 md:gap-4">
                     <span className="overflow-hidden ">
                       <img
                         src={item.image}
                         alt={item.title}
-                        className="size-7"
+                        className="size-5 md:size-7"
                       />
                     </span>
-                    <h1 className="font-semibold">{item.title}</h1>
+                    <h1 className="font-semibold text-sm">{item.title}</h1>
                   </div>
                 </div>
               );

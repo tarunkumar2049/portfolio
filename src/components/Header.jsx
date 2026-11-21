@@ -1,11 +1,16 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 export default function Header() {
+  const url = usePathname();
+  console.log(url);
   return (
-    <div className="px-45 flex justify-between py-4 fixed bg-transparent z-20 backdrop-blur-xl text-white">
-      <div className="flex font-semibold text-xl ">
+    <div className="md:px-45 w-full px-8 flex justify-between py-4 fixed bg-transparent z-20 backdrop-blur-xl text-white transition-all duration-200">
+      <Link href={"/"} className="flex font-semibold text-xl ">
         <span>
           <h1></h1>
         </span>
@@ -21,40 +26,40 @@ export default function Header() {
         <span>
           <h1></h1>
         </span>
-      </div>
-      <div className="flex font-semibold text-lg  gap-7 mx-65 ">
+      </Link>
+      <div className="hidden md:flex font-semibold text-lg  gap-7 mx-65 ">
         <Link
-          className="hover:text-[#8245ec] duration-300 transition-all hover:scale-110"
-          href={""}
+          className={`hover:text-[#8245ec] duration-300 transition-all hover:scale-110 ${url == "/about" ? "text-red-500" : "text-white"}`}
+          href={"#about"}
         >
           About
         </Link>
         <Link
           className="hover:text-[#8245ec] duration-300 transition-all hover:scale-110"
-          href={""}
+          href={"#skills"}
         >
           Skills
         </Link>
         <Link
           className="hover:text-[#8245ec] duration-300 transition-all hover:scale-110"
-          href={""}
+          href={"#experience"}
         >
           Experience
         </Link>
         <Link
           className="hover:text-[#8245ec] duration-300 transition-all hover:scale-110"
-          href={""}
+          href={"#projects"}
         >
           Projects
         </Link>
         <Link
           className="hover:text-[#8245ec] duration-300 transition-all hover:scale-110"
-          href={""}
+          href={"#education"}
         >
           Education
         </Link>
       </div>
-      <div className="flex gap-4">
+      <div className="hidden md:flex gap-4">
         <Link
           href={"https://github.com/tarunkumar2049"}
           target="_blank"

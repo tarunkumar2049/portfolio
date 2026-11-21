@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <div className="pt-60 bg-linear-to-t from-[#050414] to-[#1f032a] text-white ">
+    <div id="experience" className="pt-60 px-8 bg-linear-to-t from-[#050414] to-[#1f032a] text-white ">
       <div className="text-center flex flex-col gap-6">
         <h1>
           <span className="border-b-4 text-4xl font-bold border-[#8245ec]">
@@ -13,9 +13,9 @@ export default function Experience() {
         </h1>
       </div>
 
-      <div className=" relative mx-45 flex flex-col gap-16">
+      <div className="relative md:px-45 flex flex-col gap-16">
         <div className="hover:scale-105 duration-300 bg-[#111827] p-8 flex flex-col gap-4 rounded-2xl">
-          <div className="flex gap-4">
+          <div className="flex items-center gap-4">
             <img
               src="/ashatech-Cndb2v-A.png"
               alt="asha tech image"
@@ -40,7 +40,7 @@ export default function Experience() {
           </div>
           <div className="flex flex-col gap-2">
             <h1 className="font-semibold text-white">Skills Learning:</h1>
-            <div className="flex flex-wrap gap-2 text-white">
+            <div className="flex flex-wrap gap-2 text-xs md:text-md text-white">
               <span className="bg-[#8245ec] px-4 py-1 rounded-md border border-gray-400">
                 HTML
               </span>

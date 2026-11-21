@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="pt-60 px-45 bg-linear-to-t from-[#050414] to-[#1f032a] text-white">
+    <div className="pt-60 md:px-45 px-8 bg-linear-to-t from-[#050414] to-[#1f032a] text-white">
       <div className="text-center flex flex-col gap-6">
         <h1>
           <span className="border-b-4 text-4xl font-bold border-[#8245ec]">
@@ -13,7 +13,7 @@ export default function Contact() {
         </h1>
       </div>
       <div className="flex flex-col items-center">
-        <form className="flex flex-col text-center w-170 gap-4 p-8 border rounded-md border-gray-600 bg-[#0d081f]">
+        <form className="flex flex-col text-center md:w-170 gap-4 py-8 px-12 md:p-8 border rounded-md border-gray-600 bg-[#0d081f]">
           <h1 className="font-bold">Connect With Me</h1>
           <input
             type="text"
