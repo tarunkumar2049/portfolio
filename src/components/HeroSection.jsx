@@ -10,9 +10,9 @@ export default function HeroSection() {
         <div className="lg:hidden mx-auto lg:mx-0 bg-contain size-60 md:size-80 lg:size-120  rounded-full overflow-hidden">
           <img src="/myImage.png" className="scale-140 " />
         </div>
-        <div className="text-3xl flex flex-col gap-4">
+        <div className="text-3xl flex flex-col gap-4 ">
           <h1>Hi,I am</h1>
-          <div className="text-5xl">
+          <div className="text-5xl ">
             <h1>Tarun Kumar</h1>
           </div>
           <h1 className="text-xl md:text-3xl">
@@ -29,7 +29,7 @@ export default function HeroSection() {
         <Link
           href={"/abcd.pdf"}
           target="_blank"
-          className="bg-[#8245ec] shadow-2xl shadow-[#8245ec] text-white mx-auto lg:mx-0 text-lg text-center font-bold rounded-4xl px-4 py-3 my-8 w-50 hover:scale-110 duration-300 delay-150"
+          className="bg-[#8245ec]  shadow-[0px_0px_25px_5px] shadow-[#8245ec] text-white mx-auto lg:mx-0 text-lg text-center font-bold rounded-4xl px-4 py-3 my-8 w-50 hover:scale-110 duration-300 delay-150"
         >
           DOWNLOAD CV
         </Link>
