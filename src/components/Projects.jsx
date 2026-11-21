@@ -94,7 +94,7 @@ export default function Projects() {
       </div>
 
       {popup && (
-        <div className="top-15 right-0  mx-8 md:mx-0 h-screen lg:top-20 fixed flex flex-col z-25 backdrop-blur-md">
+        <div className="top-15 right-0  mx-8 md:mx-0 h-screen lg:pt-4 fixed flex flex-col z-25 backdrop-blur-md">
           {project
             .filter((data) => data.id == id)
             .map((item) => {
