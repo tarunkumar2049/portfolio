@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <div id="about" className="md:px-45 px-8 text-center flex flex-col md:flex-row py-16 gap-35 pt-20 bg-[#050414] text-white">
+    <div id="about" className="md:px-45 px-8 text-center md:text-left flex flex-col md:flex-row py-16 gap-35 pt-20 bg-[#050414] text-white">
       <div className="flex flex-col font-bold gap-8">
         <div className="text-3xl flex flex-col gap-4">
           <h1>Hi,I am</h1>
