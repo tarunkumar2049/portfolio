@@ -37,7 +37,7 @@ export default function Skills() {
     },
     {
       id: 8,
-      image: "/Material Ui.png",
+      image: "/Material UI.png",
       title: "Material Ui",
     },
     // {
