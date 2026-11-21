@@ -29,7 +29,10 @@ export default function Education() {
     },
   ];
   return (
-    <div id="education" className="relative pt-60 px-8 md:px-45 bg-linear-to-b from-[#050414] to-[#1f032a] text-white">
+    <div
+      id="education"
+      className="relative pt-60 px-8 lg:px-45 md:px-20 bg-linear-to-b from-[#050414] to-[#1f032a] text-white"
+    >
       <div className="text-center flex flex-col gap-6">
         <h1>
           <span className="border-b-4 text-4xl font-bold border-[#8245ec]">
@@ -40,7 +43,7 @@ export default function Education() {
           My education has been a journey of learning and development. Here are
           the details of my academic background
         </h1>
-        <div className="absolute top-122 md:top-100 md:right-[50%] h-280 md:h-235 w-1 bg-white"></div>
+        <div className="absolute top-122 lg:top-100 md:right-[50%] h-280 md:h-200 lg:h-235 w-1 bg-white md:hidden lg:flex"></div>
       </div>
 
       <div>
@@ -48,7 +51,7 @@ export default function Education() {
           return (
             <div
               key={data.id}
-              className={`flex flex-col pb-6 md:pb-0 pl-4 ${data.id == 2 ? "items-end" : "items-start"} `}
+              className={`flex flex-col  pb-6 lg:pb-0 pl-4 ${data.id == 2 ? "items-end" : "items-start"} `}
             >
               <div className="border rounded-2xl flex flex-col gap-2 md:gap-4 p-6 md:w-96 hover:scale-105 duration-300 bg-[#0d081f]">
                 <div className="flex gap-4 items-center ">

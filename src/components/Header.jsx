@@ -10,9 +10,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 export default function Header() {
   const url = usePathname();
   const [menu, setMenu] = useState(false);
-  console.log(menu);
   return (
-    <div className="md:px-45 w-full px-8 flex justify-between py-4 fixed bg-transparent z-20 backdrop-blur-xl text-white transition-all duration-200">
+    <div className="lg:px-45 w-full px-8 md:px-12 flex justify-between py-4 fixed bg-transparent z-20 backdrop-blur-xl text-white transition-all duration-200">
       <Link href={"/"} className="flex font-semibold text-xl ">
         <span>
           <h1></h1>
@@ -104,7 +103,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="hidden md:flex font-semibold text-lg  gap-7 mx-65 ">
+      <div className="hidden md:flex font-semibold text-lg  gap-7 lg:mx-65 ">
         <Link
           className={`hover:text-[#8245ec] duration-300 transition-all hover:scale-110 ${url == "/about" ? "text-red-500" : "text-white"}`}
           href={"#about"}

@@ -35,7 +35,6 @@ export default function Projects() {
 
   const [popup, setPopup] = useState(false);
   const [id, setId] = useState(" ");
-  console.log("popup", popup);
 
   function popupClick(id) {
     setPopup(true);
@@ -55,7 +54,7 @@ export default function Projects() {
         </h1>
       </div>
 
-      <div className="md:px-45 grid md:grid-cols-3 gap-12">
+      <div className="lg:px-45 grid md:grid-cols-2 lg:grid-cols-3 gap-12">
         {project.map((item) => {
           return (
             <div
@@ -74,7 +73,7 @@ export default function Projects() {
                 />
               </div>
               <h1 className="text-2xl font-bold text-white">{item.title}</h1>
-              <p className="line-clamp-3 md:w-80 text-lg text-gray-500">
+              <p className="line-clamp-3 lg:w-80 text-lg text-gray-500">
                 {item.desc}
               </p>
               <div className="text-purple-500/80 flex flex-wrap md:w-70 gap-2">
@@ -95,14 +94,14 @@ export default function Projects() {
       </div>
 
       {popup && (
-        <div className="top-15 right-0 mx-8 h-screen md:top-20 fixed flex flex-col z-25 backdrop-blur-md">
+        <div className="top-15 right-0  mx-8 md:mx-0 h-screen lg:top-20 fixed flex flex-col z-25 backdrop-blur-md">
           {project
             .filter((data) => data.id == id)
             .map((item) => {
               return (
                 <div
                   key={item.id}
-                  className="relative flex flex-col gap-6 bg-[#0d081f] md:mx-90 p-6 md:p-8 pb-20 rounded-2xl"
+                  className="relative flex flex-col gap-6 bg-[#0d081f] lg:mx-90 p-6 md:mx-12 lg:p-8 pb-20 rounded-2xl"
                 >
                   <div
                     className="absolute right-4 md:right-8 text-3xl font-bold hover:scale-125 hover:text-red-600 duration-300"
@@ -117,11 +116,11 @@ export default function Projects() {
                     <img
                       src={item.image}
                       alt="website image"
-                      className="h-35 md:h-60"
+                      className="h-35 lg:h-60"
                     />
                   </div>
                   <h1 className="text-2xl md:text-3xl ">{item.title}</h1>
-                  <p className="text-xs font-semibold md:text-lg text-gray-500">
+                  <p className="text-xs md:text-sm font-semibold lg:text-lg text-gray-500">
                     {item.desc}
                   </p>
                   <div className="text-purple-500/80 flex flex-wrap gap-2">
@@ -139,14 +138,14 @@ export default function Projects() {
                   <div className="flex justify-around md:gap-10">
                     <Link
                       href={item.code}
-                      className="bg-[#1a253c] hover:bg-[#6b21a8] px-4 md:px-27 py-1 rounded-2xl md:rounded-md md:text-2xl font-semibold"
+                      className="bg-[#1a253c] hover:bg-[#6b21a8] px-4 md:px-27 py-1 rounded-2xl lg:rounded-md lg:text-2xl font-semibold"
                       target="_blank"
                     >
                       View Code
                     </Link>
                     <Link
                       href={item.live}
-                      className="bg-[#8040b6] hover:bg-[#6b21a8] px-4 md:px-27 py-1 rounded-2xl md:rounded-md md:text-2xl font-semibold"
+                      className="bg-[#8040b6] hover:bg-[#6b21a8] px-4 md:px-27 py-1 rounded-2xl lg:rounded-md lg:text-2xl font-semibold"
                       target="_blank"
                     >
                       View Live

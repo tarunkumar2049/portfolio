@@ -13,7 +13,7 @@ export default function Experience() {
         </h1>
       </div>
 
-      <div className="relative md:px-45 flex flex-col gap-16">
+      <div className="relative lg:px-45 flex flex-col gap-16">
         <div className="hover:scale-105 duration-300 bg-[#111827] p-8 flex flex-col gap-4 rounded-2xl">
           <div className="flex items-center gap-4">
             <img
