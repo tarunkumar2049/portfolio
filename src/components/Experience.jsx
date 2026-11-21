@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <div id="experience" className="pt-60 px-8 bg-linear-to-t from-[#050414] to-[#1f032a] text-white ">
+    <div id="experience" className="py-30 px-8 bg-linear-to-t from-[#050414] to-[#1f032a] text-white ">
       <div className="text-center flex flex-col gap-6">
         <h1>
           <span className="border-b-4 text-4xl font-bold border-[#8245ec]">

@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="pt-60 md:px-45 px-8 bg-linear-to-t from-[#050414] to-[#1f032a] text-white">
+    <div className="py-30 md:px-45 px-8 bg-linear-to-t from-[#050414] to-[#1f032a] text-white">
       <div className="text-center flex flex-col gap-6">
         <h1>
           <span className="border-b-4 text-4xl font-bold border-[#8245ec]">

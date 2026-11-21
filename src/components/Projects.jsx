@@ -41,7 +41,7 @@ export default function Projects() {
     setId(id);
   }
   return (
-    <div id="projects" className="pt-60 px-8 pb-6 bg-[#050414] text-white">
+    <div id="projects" className="py-30 px-8 bg-[#050414] text-white">
       <div className="text-center flex flex-col gap-6">
         <h1>
           <span className="border-b-4 text-4xl font-bold border-[#8245ec]">
