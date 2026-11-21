@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <div id="about" className="lg:px-45 px-8 text-center lg:text-left flex flex-col md:flex-row py-16 gap-35 pt-20 lg:pt-40 bg-[#050414] text-white">
+    <div id="about" className="lg:px-45 px-8 text-center lg:text-left flex flex-col md:flex-row py-16 gap-35 pt-30 lg:pt-40 bg-[#050414] text-white">
       <div className="flex flex-col font-bold gap-8">
         <div className="lg:hidden mx-auto lg:mx-0 bg-contain size-60 md:size-80 lg:size-120  rounded-full overflow-hidden">
         <img src="/myImage.png" className="scale-140 " />

@@ -6,15 +6,18 @@ import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 export default function Header() {
   const url = usePathname();
+  console.log(url);
   const [menu, setMenu] = useState(false);
   return (
     <div className="lg:px-45 w-full px-8 md:px-12 flex justify-between py-4 fixed bg-transparent z-20 backdrop-blur-xl text-white transition-all duration-200">
       <Link href={"/"} className="flex font-semibold text-xl ">
-        <span>
-          <h1></h1>
+        <span className="text-[#8245ec] flex mt-1 text-sm font-bold items-center justify-center">
+          <IoIosArrowBack />
         </span>
         <span>
           <h1>Tarun</h1>
@@ -25,11 +28,12 @@ export default function Header() {
         <span>
           <h1>Kumar</h1>
         </span>
-        <span>
-          <h1></h1>
+
+        <span className="text-[#8245ec] flex mt-1 text-sm font-bold items-center justify-center">
+          <IoIosArrowForward />
         </span>
       </Link>
-      <div className="flex items-center md:hidden ">
+      <div className="flex items-center md:hidden text-purple-700 text-3xl">
         <div
           onClick={() => {
             menu ? setMenu(false) : setMenu(true);
@@ -38,10 +42,10 @@ export default function Header() {
           <GiHamburgerMenu />
         </div>
         <div
-          className={`${menu ? "flex" : "hidden"} flex-col gap-4 fixed px-12 py-8 bg-black/50 items-center left-8 right-8 top-15 rounded-2xl `}
+          className={`${menu ? "flex" : "hidden"} flex-col gap-4 fixed px-12 py-8 bg-black/50 items-center left-8 right-8 top-15 rounded-2xl backdrop-blur-2xl  `}
         >
           <Link
-            className={`hover:text-[#8245ec] duration-300 transition-all hover:scale-110 ${url == "/about" ? "text-red-500" : "text-white"}`}
+            className={`hover:text-[#8245ec] duration-300 transition-all hover:scale-110 ${url == `/` ? "text-red-500" : "text-white"}`}
             href={"#about"}
             onClick={() => {
               setMenu(false);
