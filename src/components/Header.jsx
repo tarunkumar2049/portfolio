@@ -22,7 +22,7 @@ export default function Header() {
         <span>
           <h1>Tarun</h1>
         </span>
-        <span className="text-[#8245ec] scale-140">
+        <span className="text-[#8245ec] scale-100">
           <h1>/</h1>
         </span>
         <span>
