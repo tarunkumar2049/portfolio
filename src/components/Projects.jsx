@@ -5,6 +5,7 @@ import { useState } from "react";
 import { BiX } from "react-icons/bi";
 
 export default function Projects() {
+  const [popup, setPopup] = useState(false);
   const project = [
     {
       id: 1,
@@ -33,7 +34,6 @@ export default function Projects() {
     },
   ];
 
-  const [popup, setPopup] = useState(false);
   const [id, setId] = useState(" ");
 
   function popupClick(id) {
@@ -59,8 +59,7 @@ export default function Projects() {
           return (
             <div
               key={item.id}
-              className="flex flex-col gap-4  bg-[#251f38] px-4 py-12 rounded-2xl border border-gray-400 hover:-translate-y-2 
-              duration-300 hover:shadow-2xl shadow-purple-600 group "
+              className="flex flex-col gap-4 bg-[#251f38] px-4 py-12 rounded-2xl border border-gray-400 hover:-translate-y-2 duration-300 hover:shadow-2xl shadow-purple-600 group"
               onClick={() => {
                 popupClick(item.id);
               }}
